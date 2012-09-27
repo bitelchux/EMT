@@ -3,19 +3,18 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.pointabout.72C8DE42"
         version   = "2.0.0">
-    <name>Daily horoscope Summary</name>
+    <name>Madrid EMT, Metro, Renfe</name>
 
     <description>
-      Daily horoscope Summary
+      Transporte publico de madrid, EMT, Metro y Renfe cercanias.
     </description>
-
     <author href="http://bitelchux.com" email="bitelchux@gmail.com">
         bitelchux
     </author>
   <icon src="icon.png" />
   <gap:splash src="splash.png" />
   <access origin="*" />
-  
+  <preference name="target-device" value="handset" />
   <preference name="stay-in-webview" value="false" />
   <preference name="permissions" value="none"/>
     <feature name="http://api.phonegap.com/1.0/network" />
