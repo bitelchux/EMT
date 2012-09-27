@@ -1,0 +1,356 @@
+﻿<?xml version="1.0"  encoding="utf-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML Basic 1.1//EN" "http://www.w3.org/TR/xhtml-basic/xhtml-basic11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<title>Web wraper</title> 
+<meta name="viewport" content="target-densitydpi=medium-dpi,width=device-width,initial-scale=1,user-scalable=no" />  
+<meta name="title" content="Web wraper" /> 
+<meta name="language" content="en" /> 
+<meta name="robots" content="All" />
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="block.js"></script>
+<script type="text/javascript" src="mio.js"></script>
+<script>
+    function ira(donde) {
+        $('#dlineas').hide();
+        espera();
+        $('#conte').load(donde, function () {     
+            $.unblockUI();
+        });
+    }
+
+    function iraemt(cual) {
+        var cual = cual.options[cual.options.selectedIndex].value;        
+        espera();
+        $('#conte').load("http://androidiphonewebapps.com/EMT/iphoneemt.php?linea=" + cual, function () {
+            $.unblockUI();
+            
+        });
+    }
+
+
+    $(document).ready(function () {
+        
+        /*
+        $("a").click(function () {
+
+        });
+        */
+    });
+</script>
+<style>
+*{
+font-family:Georgia, Helvetica, Arial, Sans-Serif;;
+color:black;
+}
+.blockPage
+{
+    border-bottom-left-radius: 9px 9px;
+    border-bottom-right-radius: 9px 9px;
+    border-top-left-radius: 9px 9px;
+    border-top-right-radius: 9px 9px;
+    -moz-border-radius-topleft: 0.6em;
+    -moz-border-radius-topright: 0.6em;
+}
+td,li,p,body,div,a{
+font-size:14px;
+}
+    body
+    {
+        background-color:white;
+        color:black;
+        overflow-x:hidden;
+        margin:0px;
+        padding:0px;
+        
+    }    
+    a
+    {
+        color:#69F;
+    	font-weight:bold;
+    	text-transform:capitalize;
+    	text-decoration:none;
+    }
+    a:visited{
+        color:gray;
+    }
+    h1,h2,h3
+    {        
+        font-size:18px;  
+    	text-transform:capitalize;
+    	color:#039;
+    	margin-top:0px;
+    	padding-top:0px;
+    }
+    h1{
+    	font-size:20px;  
+        font-weight:bold;
+
+    }
+ul{
+list-style-type:none;
+min-width:280px;
+margin:10px;
+padding:0px;
+}
+.datos{
+display:none;
+}
+.menu{
+
+}
+.menu2{
+text-decoration:none;
+
+}
+.menu3{
+vertical-align:middle;
+background: #5E87B0 -webkit-gradient(linear, 0% 0%, 0% 100%, from(#81A8CE), to(#5E87B0));
+background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#81A8CE), to(#5E87B0));
+border: 1px solid #456F9A;
+border: 1px solid #CCC;
+border-bottom-left-radius: 9px 9px;
+border-bottom-right-radius: 9px 9px;
+border-top-left-radius: 9px 9px;
+border-top-right-radius: 9px 9px;
+padding:5px;
+font-size:18px;
+text-transform:capitalize;
+font-weight:bold;
+vertical-align:middle;
+color:white;
+}
+.header
+{
+    color:White;
+    text-align:center;
+    border-bottom: 1px solid #333;
+    background: url(iphone-footer-bar.png) repeat-x black;
+
+}
+.header{
+border:1px solid #456f9a;
+background:#5e87b0;
+color:#fff;
+font-weight:bold;
+text-shadow:0 -1px 1px #254f7a;
+background-image:-moz-linear-gradient(top,#81a8ce,#5e87b0);
+background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#81a8ce),color-stop(1,#5e87b0));
+-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#81a8ce',EndColorStr='#5e87b0')";
+color: white;
+font-weight:bold;
+padding: 5px 0px 0px 0px;
+-moz-border-radius-topleft:0.6em;
+-moz-border-radius-topright:0.6em;
+min-height:45px;
+padding:0px;
+vertical-align:middle;
+text-align:center;
+width:100%;
+}
+.header h1{
+color:gray
+}
+.header td
+{
+    color:White;
+    font-size:xx-small;
+    border-right:1px solid gray;
+    margin:4px;
+    padding:4px;
+}
+.item{
+background:url("http://freeandroidmusthave.com/itembg.gif");
+background-repeat:repeat-x;
+height:55px;
+vertical-align:middle;
+background-position-y: 100%;
+margin:3px;
+}
+.itempeq{
+height:25px;
+vertical-align:middle;
+text-align:left;
+padding:6px;
+width:100%;
+border-bottom:1px solid silver;
+}
+li{
+vertical-align:middle;
+border-color: rgba(255, 255, 255, 0.292969);
+background: #EEE -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FDFDFD), to(#EEE));
+border: 1px solid #CCC;
+padding:8px;
+}
+.onsection a{
+text-decoration:none;
+
+}
+.menuitemli{
+list-style: none;
+vertical-align:middle;
+border-color: rgba(255, 255, 255, 0.292969);
+background: #EEE -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FDFDFD), to(#EEE));
+border: 1px solid #CCC;
+padding:5px;
+
+}
+input{
+padding:5px;
+heigth:25px;
+border:1px solid silver;
+border-bottom-left-radius: 5px 5px;
+border-bottom-right-radius: 5px 5px;
+border-top-left-radius: 5px 5px;
+border-top-right-radius: 5px 5px;
+}
+.redondeado{
+border:1px solid silver;
+border-bottom-left-radius: 9px 9px;
+border-bottom-right-radius: 9px 9px;
+border-top-left-radius: 9px 9px;
+border-top-right-radius: 9px 9px;
+-moz-border-radius-topleft:0.6em;
+-moz-border-radius-topright:0.6em;
+width:95%;
+}
+.ocultin{
+ display:none;
+}
+.subseccionhead {
+border:1px solid #456f9a;
+background:#5e87b0;
+color:#fff;
+font-weight:bold;
+text-shadow:0 -1px 1px #254f7a;
+background-image:-moz-linear-gradient(top,#81a8ce,#5e87b0);
+background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#81a8ce),color-stop(1,#5e87b0));
+-ms-filter:"progid:DXImageTransform.Microsoft.gradient(startColorStr='#81a8ce',EndColorStr='#5e87b0')";
+border-top-left-radius: 9px 9px;
+border-top-right-radius: 9px 9px;
+color: white;
+min-height: 30px;
+text-align: center;
+vertical-align:middle;
+font-weight:bold;
+padding: 5px 0px 0px 0px;
+-moz-border-radius-topleft:0.6em;
+-moz-border-radius-topright:0.6em;
+
+}
+.boton{
+vertical-align:middle;
+border-color: rgba(255, 255, 255, 0.292969);
+background: #EEE -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FDFDFD), to(#EEE));
+border: 3px solid #CCC;
+padding:8px;
+border-bottom-left-radius: 9px 9px;
+border-bottom-right-radius: 9px 9px;
+border-top-left-radius: 9px 9px;
+border-top-right-radius: 9px 9px;
+-moz-border-radius-topleft:0.6em;
+-moz-border-radius-topright:0.6em;
+text-align:center;
+font-size:18px;
+margin:20px;
+cursor:pointer;
+}
+.boton_a{
+vertical-align:middle;
+border-color: rgba(255, 255, 255, 0.292969);
+background: #EEE -webkit-gradient(linear, 0% 0%, 0% 100%, from(#FDFDFD), to(#EEE));
+border: 3px solid #CCC;
+padding:8px;
+border-bottom-left-radius: 9px 9px;
+border-bottom-right-radius: 9px 9px;
+border-top-left-radius: 9px 9px;
+border-top-right-radius: 9px 9px;
+-moz-border-radius-topleft:0.6em;
+-moz-border-radius-topright:0.6em;
+text-align:center;
+font-size:14px;
+
+cursor:pointer;
+display:block;
+font-weight:bold;
+}
+
+.conte img{
+width:35px;
+}
+td{
+vertical-align:top;
+text-align:center;
+}
+
+</style>
+</head>
+<body>
+<div id="page" style="display:none">
+    <div class="header"> 
+        <table>
+            <td onclick="ira('home.html')">
+                Tiempo de espera
+                <br />
+                <img src="reloj.png" />
+            </td>
+            <td onclick="$('#dlineas').fadeIn();$('#conte').html('');">
+                Esquema lineas EMT
+                <br />
+                <img src="emt.png" />
+            </td>
+            <td onclick="ira('pmetro.html')">
+                Esquema lineas Metro
+                <br />
+                <img src="metro.png" />
+            </td>
+           <td onclick="ira('prenfe.html')">
+                Esquema lineas Renfe
+                <br />
+                <img src="renfe.png" />
+            </td>
+
+        </table>
+    </div><!-- /header --> 
+    <div id="dlineas" style="display:none">
+        <h3>Seleccione una l&iacute;nea de Bus EMT</h3>
+        <select id="linea" onchange="iraemt(this)" style="width:80%"><option value="60001">1 Plaza de Cristo Rey-Prosperidad</option><option value="60003">3 Puerta de Toledo-Plaza de San Amaro</option><option value="60004">4 Plaza de Ciudad Lineal-Puerta de Arganda</option><option value="60005">5 Puerta del Sol-Estacion de Chamartin</option><option value="60006">6 Plaza de Benavente-Orcasitas</option><option value="60007">7 Plaza de Alonso Martinez-Manoteras</option><option value="60008">8 Plaza de Legazpi-Valdebernardo</option><option value="60009">9 Sevilla-Hortaleza</option><option value="60011">11 Marques de Viana-Barrio Blanco</option><option value="60012">12 Plaza de Cristo Rey-Paseo del Marques de Zafra</option><option value="60014">14 Plaza del Conde de Casal-Avenida de Pio XII</option><option value="60015">15 Puerta del Sol-La Elipa</option><option value="60016">16 Moncloa-Avenida de Pio XII</option><option value="60017">17 Plaza Mayor-Colonia Parque Europa</option><option value="60018">18 Plaza Mayor-Villaverde Cruce</option><option value="60019">19 Plaza de CataluÃ±a-Plaza de Legazpi</option><option value="60020">20 Puerta del Sol-Pavones</option><option value="60021">21 Paseo del Pintor Rosales-Barrio del Salvador</option><option value="60022">22 Plaza de Legazpi-Villaverde Alto</option><option value="60024">24 Atocha-Pozo del Tio Raimundo</option><option value="60025">25 Opera - Casa de Campo</option><option value="60026">26 Plaza de Tirso de Molina-Diego de Leon</option><option value="60027">27 Glorieta de Embajadores-Plaza de Castilla</option><option value="60029">29 Avenida de Felipe II-Manoteras</option><option value="60030">30 Avenida de Felipe II-Pavones</option><option value="60031">31 Plaza Mayor-Aluche</option><option value="60032">32 Plaza de Benavente-Pavones</option><option value="60033">33 Principe Pio - Casa de Campo</option><option value="60034">34 Plaza de Cibeles-Avenida del General Fanjul</option><option value="60035">35 Plaza Mayor-Carabanchel Alto</option><option value="60036">36 Atocha-Campamento</option><option value="60037">37 Glorieta de Cuatro Caminos-Puente de Vallecas</option><option value="60038">38 Plaza de Manuel Becerra-Las Rosas</option><option value="60039">39 Opera-Colonia San Ignacio de Loyola</option><option value="60040">40 Tribunal-Alfonso XIII</option><option value="60041">41 Atocha-Colonia del Manzanares</option><option value="60042">42 Plaza de Castilla-PeÃ±a Grande</option><option value="60043">43 Avenida de Felipe II-Estrecho</option><option value="60044">44 Plaza del Callao-Marques de Viana</option><option value="60045">45 Glorieta del Presidente Garcia Moreno-Plaza de Legazpi</option><option value="60046">46 Gran Via-Moncloa</option><option value="60048">48 Plaza de Manuel Becerra-Barrio de Canillejas</option><option value="60049">49 Plaza de Castilla-Arroyo del Fresno</option><option value="60050">50 Puerta del Sol-Avenida del Manzanares</option><option value="60051">51 Puerta del Sol-Plaza del Peru</option><option value="60052">52 Puerta del Sol-Santamarca</option><option value="60053">53 Puerta del Sol-Parque San Juan Bautista</option><option value="60054">54 Atocha-Barrio de Vilano</option><option value="60055">55 Atocha - Batan</option><option value="60056">56 Diego de Leon - Puente de Vallecas</option><option value="60057">57 Atocha-Alto del Arenal</option><option value="60059">59 Atocha-Colonia San Cristobal de los Angeles</option><option value="60060">60 Plaza de la Cebada-Orcasitas</option><option value="60061">61 Moncloa-Narvaez</option><option value="60062">62 Principe Pio-Puerto Serrano</option><option value="60063">63 Avenida de Felipe II-Barrio de Santa Eugenia</option><option value="60064">64 Glorieta de Cuatro Caminos-Arroyo del Fresno</option><option value="60065">65 Plaza de Benavente-Colonia Gran Capitan</option><option value="60066">66 Glorieta de Cuatro Caminos-Fuencarral</option><option value="60067">67 Plaza de Castilla-Barrio de PeÃ±agrande</option><option value="60068">C1 Glorieta de Cuatro Caminos/Atocha-Glorieta de Embajador</option><option value="60069">C2 Glorieta de Cuatro Caminos-Glorieta de Embajadores/Atoc</option><option value="60070">70 Plaza de Castilla-Alsacia</option><option value="60071">71 Plaza Manuel Becerra - Puerta de Arganda</option><option value="60072">72 Diego de Leon-Hortaleza</option><option value="60073">73 Diego de Leon-Canillas</option><option value="60074">74 Paseo del Pintor Rosales-Parque de las Avenidas</option><option value="60075">75 Plaza del Callao-Colonia del Manzanares</option><option value="60076">76 Plaza de la Beata Maria Ana de Jesus-Villaverde Alto</option><option value="60077">77 Plaza de Ciudad Lineal-Colonia Fin de Semana</option><option value="60078">78 Glorieta de Embajadores-Barrio de San Fermin</option><option value="60079">79 Plaza de Legazpi-Villaverde Alto</option><option value="60081">81 Oporto-Hospital 12 de Octubre</option><option value="60083">83 Moncloa-Barrio del Pilar</option><option value="60085">85 Atocha-Barrio de los Rosales</option><option value="60086">86 Atocha-Villaverde Alto</option><option value="60087">87 Plaza de Republica Dominicana-Las Carcavas</option><option value="60090">E Plaza del Conde de Casal-Politecnico de Vallecas</option><option value="60091">F Glorieta de Cuatro Caminos-Ciudad Universitaria</option><option value="60092">G Moncloa-Ciudad Universitaria</option><option value="60093">A Moncloa-Campus de Somosaguas</option><option value="60096">H Aluche-Campus de Somosaguas</option><option value="60097">I Ciudad Universitaria-Campus de Somosaguas</option><option value="60099">U Avenida de Seneca-Paraninfo</option><option value="60100">100 Moratalaz-Valderrivas</option><option value="60101">101 Canillejas-Aeropuerto/Barajas</option><option value="60102">102 Atocha-Estacion El Pozo</option><option value="60103">103 Entrevias-Ecobulevar</option><option value="60104">104 Plaza de Ciudad Lineal-Mar de Cristal</option><option value="60105">105 Plaza de Ciudad Lineal-Barajas</option><option value="60106">106 Plaza de Manuel Becerra-Vicalvaro</option><option value="60107">107 Plaza de Castilla-Hortaleza</option><option value="60108">108 Oporto-Cementerio de Carabanchel</option><option value="60109">109 Plaza de Ciudad Lineal-Castillo de Ucles</option><option value="60111">111 Puente de Vallecas-Entrevias</option><option value="60112">112 Mar de Cristal-BÂº del Aeropuerto</option><option value="60113">113 Mendez Alvaro-Plaza de Ciudad Lineal</option><option value="60114">114 Avenida de America-Barrio del Aeropuerto</option><option value="60115">115 Avenida de America-Barajas</option><option value="60116">116 Glorieta de Embajadores-Villaverde Cruce</option><option value="60117">117 Aluche-Colonia San Ignacio de Loyola</option><option value="60118">118 Glorieta de Embajadores-Avenida de la Peseta</option><option value="60119">119 Atocha-Barrio de Goya</option><option value="60120">120 Plaza de Lima-Hortaleza</option><option value="60121">121 Campamento-Hospital 12 de Octubre</option><option value="60122">122 Avenida de America-Campo de las Naciones</option><option value="60123">123 Plaza de Legazpi-Villaverde Bajo</option><option value="60124">124 Glorieta de Cuatro Caminos-Lacoma</option><option value="60125">125 Mar de Cristal-Hospital Ramon y Cajal</option><option value="60126">126 Nuevos Ministerios-Barrio del Pilar</option><option value="60127">127 Glorieta de Cuatro Caminos-Ciudad de los Periodistas</option><option value="60128">128 Glorieta de Cuatro Caminos-Barrio del Pilar</option><option value="60130">130 Villaverde Alto-Vicalvaro</option><option value="60132">132 Moncloa-Hospital la Paz</option><option value="60133">133 Plaza del Callao-Mirasierra</option><option value="60134">134 Plaza de Castilla-Montecarmelo</option><option value="60135">135 Plaza de Castilla-Hospital Ramon y Cajal</option><option value="60136">136 Pacifico-Madrid Sur</option><option value="60137">137 Ciudad Puerta de Hierro-Fuencarral</option><option value="60138">138 Plaza de EspaÃ±a-Aluche</option><option value="60139">139 Dehesa del Principe-Carabanchel Alto</option><option value="60140">140 Pavones-Canillejas</option><option value="60141">141 Atocha-Buenos Aires</option><option value="60142">142 Pavones-Ensanche de Vallecas</option><option value="60143">143 Plaza de Manuel Becerra-Villa de Vallecas</option><option value="60144">144 Pavones-Entrevias</option><option value="60145">145 Plaza del Conde de Casal-Ensanche de Vallecas</option><option value="60146">146 Plaza del Callao-Los Molinos</option><option value="60147">147 Plaza del Callao-Barrio del Pilar</option><option value="60148">148 Plaza del Callao-Puente de Vallecas</option><option value="60149">149 Tribunal-Plaza de Castilla</option><option value="60150">150 Puerta del Sol-Colonia Virgen del Cortijo</option><option value="60151">151 Canillejas-Barajas</option><option value="60152">152 Avenida de Felipe II-Mendez Alvaro</option><option value="60153">153 Las Rosas - Mar de Cristal</option><option value="60155">155 Plaza Eliptica - Aluche</option><option value="60156">156 Plaza de Manuel Becerra-Plaza de Legazpi</option><option value="60160">160 Moncloa - Aravaca</option><option value="60161">161 Moncloa - Estacion de Aravaca</option><option value="60162">162 Moncloa - El Barrial</option><option value="60172">172 Mar de Cristal - Telefonica</option><option value="60173">173 Plaza de Castilla - Sanchinarro</option><option value="60174">174 Plaza de Castilla - Sanchinarro Este</option><option value="60176">176 Plaza de Castilla - las Tablas</option><option value="60178">178 Plaza de Castilla - Montecarmelo</option><option value="60200">200 Avenida de America - Aeropuerto</option><option value="60203">203 Expres Aeropuerto</option><option value="60215">215 Avenida de Felipe II-Parque Roma</option><option value="60401">E1 Atocha - Embajadores - Plaza Eliptica</option><option value="60402">E2 Avenida de Felipe II-Las Rosas</option><option value="60403">E3 Avenida de Felipe II-Puerta de Arganda</option><option value="60451">T11 Mar de Cristal - Parque Empresarial Cristalia</option><option value="60452">T23 Puerta de Arganda - Poligono Industrial de Vicalvaro</option><option value="60453">T32 Plaza de Legazpi-Mercamadrid</option><option value="60454">T31 Estacion El Pozo-Sierra de Guadalupe</option><option value="60455">T61 Estacion Cercanias Fuencarral-Telefonica</option><option value="60456">T41 Estacion Cercanias Villaverde Alto - P.I. la Resina</option><option value="60457">T62 Plaza de Castilla-Estacion de Chamartin</option><option value="60481">H1 Sierra de Guadalupe-Hospital Infanta Leonor</option><option value="60601">M1 Sevilla - Glorieta de Embajadores</option><option value="60602">M2 Sevilla - ArgÃ¼elles</option><option value="60702">S.E. Plaza Eliptica-Cementerio Sur</option><option value="60704">S.E. Plaza de Castilla-Cementerio de Fuencarral</option><option value="61002">2 Plaza de Manuel Becerra-Avenida de Reina Victoria</option><option value="61010">10 Plaza de Cibeles-Palomeras</option><option value="61023">23 Plaza Mayor-El Espinillo</option><option value="61028">28 Puerta de Alcala-Barrio de Canillejas</option><option value="61047">47 Atocha-Carabanchel Alto</option><option value="61058">58 Puente de Vallecas-Barrio de Santa Eugenia</option><option value="61082">82 Moncloa-Barrio de PeÃ±agrande</option><option value="61110">110 Plaza de Manuel Becerra-Cementerio de la Almudena</option><option value="61129">129 Plaza de Castilla-Manoteras</option><option value="61131">131 Campamento-Villaverde Alto</option><option value="61172">172 Mar de Cristal-Las Tablas</option><option value="62002">202 Hospital Gregorio MaraÃ±on-Avenida Reina Victoria</option><option value="62010">310 Pacifico-Estacion El Pozo</option><option value="62047">247 Atocha-Colonia San Jose Obrero</option><option value="62110">210 Plaza de Manuel Becerra-La Elipa</option><option value="6N501">N 1 Plaza de Cibeles - Sanchinarro</option><option value="6N502">N 2 Plaza de Cibeles - Hortaleza</option><option value="6N503">N 3 Plaza de Cibeles - Canillas</option><option value="6N504">N 4 Plaza de Cibeles - Barajas</option><option value="6N505">N 5 Plaza de Cibeles - Colonia Fin de Semana</option><option value="6N506">N 6 Plaza de Cibeles - las Rosas</option><option value="6N507">N 7 Plaza de Cibeles - Vicalvaro</option><option value="6N508">N 8 Plaza de Cibeles - Valdebernardo</option><option value="6N509">N 9 Plaza de Cibeles - Ensanche de Vallecas</option><option value="6N510">N10 Plaza de Cibeles - Palomeras</option><option value="6N511">N11 Plaza de Cibeles - Madrid Sur</option><option value="6N512">N12 Plaza de Cibeles - los Rosales</option><option value="6N513">N13 Plaza de Cibeles - Colonia San Cristobal de los Angeles</option><option value="6N514">N14 Plaza de Cibeles - Villaverde Alto</option><option value="6N515">N15 Plaza de Cibeles - Orcasur</option><option value="6N516">N16 Plaza de Cibeles - Avenida de la Peseta</option><option value="6N517">N17 Plaza de Cibeles - Carabanchel Alto</option><option value="6N518">N18 Plaza de Cibeles - Aluche</option><option value="6N519">N19 Plaza de Cibeles - Colonia San Ignacio de Loyola</option><option value="6N520">N20 Plaza de Cibeles - Barrio de PeÃ±agrande</option><option value="6N521">N21 Plaza de Cibeles - Arroyo del Fresno</option><option value="6N522">N22 Plaza de Cibeles - Barrio del Pilar</option><option value="6N523">N23 Plaza de Cibeles - Montecarmelo</option><option value="6N524">N24 Plaza de Cibeles - las Tablas</option><option value="6N525">NC1 Plaza de Cibeles - Moncloa</option><option value="6N526">NC2 Plaza de Cibeles - ArgÃ¼elles</option><option value="6N527">N27 Expres Aeropuerto</option><option value="6N551">L1 Plaza de Castilla-Congosto</option><option value="6N552">L2 Ventas-Cuatro Caminos</option><option value="6N553">L3 Legazpi-Moncloa</option><option value="6N554">L4 ArgÃ¼elles-Parque Santa Maria</option><option value="6N555">L5 Canillejas-Casa de Campo</option><option value="6N557">L7 Las Musas-Lacoma</option><option value="6N558">L8 Nuevos Ministerios-Barajas</option><option value="6N559">L9 Herrera Oria-Puerta de Arganda</option><option value="6N560">L10 Fuencarral-Cuatro Vientos</option><option value="6N561">L6-C1 Cuatro Caminos-Nuevos Ministerios</option><option value="6N562">L6-C2 Nuevos Ministerios-Cuatro Caminos</option><option value="6N571">L11 Plaza Eliptica-Pan Bendito</option></select>
+    </div>
+
+
+    <div id="conte">
+    </div>
+
+
+</div>
+<div id="errorcon" style="display:none;text-align:center">
+    
+    <h1 style="text-align:center">This app require an internet connection (wifi, 3g, whatever ...), please enable your connection and <br />
+    
+     <a style="text-align:center" href="index.html">try again</a></h1>
+    <br />
+    <p align="center">
+    <img src="errorcon.jpg" width="200" />
+    </p>
+</div>
+<div id="testcon">
+    <img src="loading.gif" />
+    <h1>Loading...</h1>
+    <script>
+        if (navigator.onLine == "online" || navigator.onLine) {
+
+            ira("home.html");
+            $("#testcon").hide();
+            $("#errorcon").hide();
+            $("#page").show();
+        } else {
+        
+            $("#testcon").hide();
+            $("#errorcon").show();
+            $("#page").hide();
+        }
+    </script>
+</div>
+</body>
+</html>

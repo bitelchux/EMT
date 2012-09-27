@@ -1,0 +1,45 @@
+<br />
+
+<h2>Autobuses EMT - Tiempo de espera</h2>
+    <br><b>Por favor, introduzca el n&uacute;mero de parada y pulse en el bot&oacute;n "Ver Tiempo de Espera"</b><br/><br />
+    <table width="100%">
+    <tbody><tr>
+    <td width="20%">
+    <input type="text" name="l" id="l">
+    </td>
+    <td>
+    <input class="boton_a" type="submit" onclick="validar()" value="Ver Tiempo de Espera">
+    
+    </td>
+    </tr>
+    </tbody></table>		    
+    
+    <p align="center">
+    <img src="cual.jpg">
+    </p>
+    
+    <script>
+
+        function validar() {
+            var ok = true;
+            if (document.getElementById("l").value == "") {
+
+                alert("Indique un numero de parada")
+                return false;
+            }
+            if (isNaN(document.getElementById("l").value)) {
+
+                alert("El numero de parada debe ser un numero entero")
+                return false;
+            }
+            espera();
+            $('#conte').load("http://androidiphonewebapps.com/EMT/iphoneindex.php?f=1&l=" + document.getElementById("l").value, function () {
+                $.unblockUI();
+
+            });
+            //	    document.location.href = "http://androidiphonewebapps.com/EMT/?f=1&l=" + document.getElementById("l").value;
+            return true;
+        }
+
+</script>
+
