@@ -2,7 +2,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.pointabout.72C8DE42"
-        version   = "2.0.0">
+        version   = "2.0.1">
     <name>Madrid EMT, Metro, Renfe</name>
 
     <description>
@@ -14,7 +14,7 @@
   <icon src="icon.png" />
   <gap:splash src="splash.png" />
   <access origin="*" />
-  <preference name="target-device" value="handset" />
+  <preference name="target-device" value="universal" />
   <preference name="stay-in-webview" value="false" />
   <preference name="permissions" value="none"/>
     <feature name="http://api.phonegap.com/1.0/network" />
