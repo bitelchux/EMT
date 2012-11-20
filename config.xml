@@ -2,7 +2,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.pointabout.72C8DE42"
-        version   = "10">
+        version   = "100">
   <name>Madrid EMT Metro Renfe</name>
   <description>
     Transporte publico de madrid EMT Metro y Renfe cercanias
