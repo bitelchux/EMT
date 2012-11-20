@@ -3,10 +3,10 @@
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.pointabout.72C8DE42"
         version   = "10">
-    <name>Madrid EMT, Metro, Renfe</name>
-    <description>
-      Transporte publico de madrid, EMT, Metro y Renfe cercanias.
-    </description>
+  <name>Madrid EMT Metro Renfe</name>
+  <description>
+    Transporte publico de madrid EMT Metro y Renfe cercanias
+  </description>
     <author href="http://bitelchux.com" email="bitelchux@gmail.com">
         bitelchux
     </author>
