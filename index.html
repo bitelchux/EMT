@@ -24,7 +24,7 @@
     function iraemt(cual) {
         var cual = cual.options[cual.options.selectedIndex].value;        
         espera();
-        $('#conte').load("http://androidiphonewebapps.com/EMT/iphoneemt.php?linea=" + cual, function () {
+        $('#conte').load("http://mobilewebapps.me/EMT/iphoneemt.php?linea=" + cual, function () {
             $.unblockUI();
             
         });
@@ -343,7 +343,7 @@ text-align:center;
     <script>
         if (navigator.onLine == "online" || navigator.onLine) {
 
-            ira("home.html");
+            ira("http://mobilewebapps.me/EMT/iphonehome.php");
             $("#testcon").hide();
             $("#errorcon").hide();
             $("#page").show();
